@@ -1,0 +1,370 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Youtube UI</title>
+    
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="header">
+      <div class="header__left">
+        <i id="menu" class="material-icons" onclick="slider()">menu</i>
+        <img
+          src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube-logo-full_color_light.svg?cache=72a5d9c"
+          alt=""
+        />
+      </div>
+
+      <div class="header__search">
+        <form action="">
+          <input type="text" placeholder="Search" id="myInput"/>
+          <button id="myBtn" onclick="YoutubeFunction()"><i class="material-icons">search</i></button>
+        </form>
+      </div>
+
+      <div class="header__icons">
+        
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </div>
+
+    <div class="mainBody">
+     
+      <div class="sidebar">
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">subscriptions</i>
+            <span>Subcriptions</span>
+          </div>
+        </div>
+        <hr />
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+      
+      <div class="videos">
+        
+        <div class="categories">
+          <section class="category-section">
+            <button class="category active">All</button>
+            <button class="category">Group 1</button>
+            <button class="category">Group 2</button>
+            <button class="category">Group 3</button>
+            <button class="category">Group 4</button>
+            <button class="category">Group 5</button>
+            <button class="category">Group 6</button>
+            <button class="category">Group 7</button>
+            <button class="category">Group 8</button>
+            <button class="category">Group 9</button>
+          </section>
+        </div>
+        <div class="videos__container">
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=08y5RrhgPcA" target="_blank">
+              <img src="https://i.ytimg.com/vi/08y5RrhgPcA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1IoNWbBU5qsIxzoZW6OZGXaK04w" alt="" />
+                </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/c/gmb">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwni_B7AolrYkiaKhBhbw97u42OckOg-YO62uqbBHlg=s68-c-k-c0x00ffffff-no-rj" alt="" />
+              </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Piers Morgan's Most Fiery Vegan Debates Ever!
+                </h3>
+                <a href="">Good Morning Britain</a>
+                <span>10M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=9GU4x53G078&t=103s">
+              <img src="https://i.ytimg.com/vi/9GU4x53G078/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAmUc1xkXxp7vFmFQOEbY_VJuwUbg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/c/msnbc">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwnilu7oO-nzSWF-Qe35ohuwfNZm2IPG9Ia8fWz7kTX4=s68-c-k-c0x00ffffff-no-rj" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Christie Tells Man 'Sit Down And Shut Up'</h3>
+                <a href="">MSNBC</a>
+                <span>12M Views • 6 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=46cXFUzR9XM">
+              <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/user/NewOnNetflix">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnh53ZRIGnyzC28QrfuggCINb3cfNbNWo4Uc6qR9=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </a>
+              </div>
+              <div class="title">
+                <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
+                <a href="">Netflix</a>
+                <span>10M Views • 11 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=Jvx_XIihmXs">
+              <img src="https://i.ytimg.com/vi/Jvx_XIihmXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOb2NuPYGYPABqxiIXbV6gCj6V4A" alt="" />
+
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/channel/UCUU0JfukhilijYKenOyKqdg">
+                  <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnjraRmk42B3R5LBwiwMgxx4xz5nhFA-iwaZ5hp_=s68-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                </a>
+                
+              </div>
+              <div class="title">
+                <h3>Elon Musk's Most Recent Opinion on Climate Change</h3>
+                <a href=""> The Boring Company</a>
+                <span>10M Views • 1 Month Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=2Ji-clqUYnA">
+              <img src="https://img.youtube.com/vi/2Ji-clqUYnA/maxresdefault.jpg" alt="" />
+
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwniaHN7MZyFEiNvdHuKMzIWnDF604Z2--O4GCMq-FA=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Javascript Fundamentals</h3>
+                <a href="">Coding Addict</a>
+                <span>179K • 8 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=Jvx_XIihmXs">
+              <img src="https://img.youtube.com/vi/3PHXvlpOkf4/maxresdefault.jpg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnifaQZvAunS0OFb2y_cieoVjLCVjqQW8Exf3BC1gg=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Build 15 JavaScript Projects - Vanilla JavaScript Course</h3>
+                <a href=""> freeCodeCamp.org </a>
+                <span>470K Views • 8 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=DRBfM709Yqc">
+                <img src="https://i.ytimg.com/vi/DRBfM709Yqc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTC3AfF6RE0J2GzdiY1RPrOO7mHA" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/watch?v=DRBfM709Yqc">
+                  <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwniw9PWq2uvJuM7u_x_0fXIVV_ZhBT0WY6cLCqupJA=s68-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                </a>
+                
+              </div>
+              <div class="title">
+                <h3>John Kerry fires back at congressman</h3>
+                <a href=""> CNN </a>
+                <span>875K Views • 1 Year Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=ulprqHHWlng">
+              <img src="https://img.youtube.com/vi/ulprqHHWlng/maxresdefault.jpg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnifaQZvAunS0OFb2y_cieoVjLCVjqQW8Exf3BC1gg=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div class="title">
+                <h3>AWS Basics for Beginners - Full Course</h3>
+                <a href=""> freeCodeCamp.org </a>
+                <span>36K Views • 1 Day Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=D7YMSt2ntWY">
+              <img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/user/Simplilearn">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwnhJqtFsDmOEb6Hr30-AtA9e_K2-rJE1J-IbfaB0WQ=s68-c-k-c0x00ffffff-no-rj" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Top 5 Programming Languages to Learn in 2021 | Best Programming Languages to Learn
+                </h3>
+                <a href="">Simplilearn</a>
+                <span>10M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=08y5RrhgPcA" target="_blank">
+              <img src="https://i.ytimg.com/vi/08y5RrhgPcA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1IoNWbBU5qsIxzoZW6OZGXaK04w" alt="" />
+                </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/c/gmb">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwni_B7AolrYkiaKhBhbw97u42OckOg-YO62uqbBHlg=s68-c-k-c0x00ffffff-no-rj" alt="" />
+              </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Piers Morgan's Most Fiery Vegan Debates Ever!
+                </h3>
+                <a href="">Good Morning Britain</a>
+                <span>10M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=46cXFUzR9XM">
+              <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/user/NewOnNetflix">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnh53ZRIGnyzC28QrfuggCINb3cfNbNWo4Uc6qR9=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
+                <a href="">Netflix</a>
+                <span>10M Views • 11 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=08y5RrhgPcA" target="_blank">
+              <img src="https://i.ytimg.com/vi/08y5RrhgPcA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1IoNWbBU5qsIxzoZW6OZGXaK04w" alt="" />
+                </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/c/gmb">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwni_B7AolrYkiaKhBhbw97u42OckOg-YO62uqbBHlg=s68-c-k-c0x00ffffff-no-rj" alt="" />
+              </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Piers Morgan's Most Fiery Vegan Debates Ever!
+                </h3>
+                <a href="">Good Morning Britain</a>
+                <span>10M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
